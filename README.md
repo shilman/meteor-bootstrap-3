@@ -1,7 +1,13 @@
-meteor-bootstrap-3
+Meteor Bootstrap-3
 ==================
-bootstrap 3.x packaged for meteor
+
+[Bootstrap 3.x](http://getboostrap.com) packaged for [Meteor](http://meteor.com).
 
 
-### to install
-mrt add bootstrap-3
+### Installation
+
+With [Meteorite](https://github.com/oortcloud/meteorite) installed:
+
+```sh
+$ mrt add bootstrap-3
+```
