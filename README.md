@@ -1,7 +1,7 @@
 Meteor Bootstrap-3
 ==================
 
-[Bootstrap 3.x](http://getboostrap.com) packaged for [Meteor](http://meteor.com).
+[Bootstrap 3.x](http://getbootstrap.com) packaged for [Meteor](http://meteor.com).
 
 
 ### Installation
