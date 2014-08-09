@@ -6,8 +6,8 @@ Meteor Bootstrap-3
 
 ### Installation
 
-With [Meteorite](https://github.com/oortcloud/meteorite) installed:
+With Meteor 0.9 and above, install using:
 
 ```sh
-$ mrt add bootstrap-3
+$ meteor add mangasocial:bootstrap-3
 ```
