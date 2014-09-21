@@ -1,12 +1,12 @@
 Package.describe({
   name: "mizzao:bootstrap-3",
   summary: "HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
-  version: "3.2.1",
+  version: "3.2.0",
   git: "https://github.com/mizzao/meteor-bootstrap-3.git"
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom("METEOR@0.9.2.1");
+  api.versionsFrom("METEOR@0.9.2.2");
 
   api.use('jquery');
 
