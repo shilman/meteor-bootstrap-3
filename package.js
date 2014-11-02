@@ -1,5 +1,5 @@
 Package.describe({
-  name: "mizzao:bootstrap-3",
+  name: "shilman80:bootstrap-3",
   summary: "HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
   version: "3.3.0",
   git: "https://github.com/mizzao/meteor-bootstrap-3.git"
@@ -12,7 +12,8 @@ Package.onUse(function (api) {
 
   var path = Npm.require('path');
   var asset_path = path.join('bootstrap-3');
-  api.addFiles(path.join(asset_path, 'css', 'bootstrap.css'), 'client');
+  // @shilman80 hack - configure bootstrap CSS by hand
+  // api.addFiles(path.join(asset_path, 'css', 'bootstrap.css'), 'client');
   api.addFiles(path.join(asset_path, 'js', 'bootstrap.js'), 'client');
 
   // fonts
