@@ -844,6 +844,16 @@ if (typeof jQuery === 'undefined') {
       $this.attr('aria-expanded', 'false')
       $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
     })
+
+    /*
+     *  Custom Changed Line :
+     *    Temporary fixing for bootstrap dropdown
+     *    $(document).on('click.bs.dropdown.data-api', clearMenus)
+     *    binding is unbinded when Meteor reload page many times
+     *    so bind it everytime when click dropdown button
+     */
+    $(document).one('click.bs.dropdown.data-api', clearMenus)
+    // Custom Changed Line end
   }
 
   function getParent($this) {
