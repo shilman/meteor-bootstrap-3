@@ -796,6 +796,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Dropdown.prototype.keydown = function (e) {
+    debugger;
     if (!/(38|40|27|32)/.test(e.which)) return
 
     var $this = $(this)
@@ -848,11 +849,15 @@ if (typeof jQuery === 'undefined') {
     /*
      *  Custom Changed Line :
      *    Temporary fixing for bootstrap dropdown
-     *    $(document).on('click.bs.dropdown.data-api', clearMenus)
+     *    line 906 $(document).on('click.bs.dropdown.data-api', clearMenus)
      *    binding is unbinded when Meteor reload page many times
      *    so bind it everytime when click dropdown button
      */
-    $(document).one('click.bs.dropdown.data-api', clearMenus)
+    $(document)
+      .off('click.bs.dropdown.data-api', clearMenus)
+      .off('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
+      .on('click.bs.dropdown.data-api', clearMenus)
+      .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     // Custom Changed Line end
   }
 
