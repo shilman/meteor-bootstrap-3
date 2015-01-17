@@ -796,7 +796,6 @@ if (typeof jQuery === 'undefined') {
   }
 
   Dropdown.prototype.keydown = function (e) {
-    debugger;
     if (!/(38|40|27|32)/.test(e.which)) return
 
     var $this = $(this)
