@@ -17,10 +17,10 @@ Package.onUse(function (api) {
   api.addFiles(path.join(asset_path, 'js', 'bootstrap.js'), 'client');
 
   // fonts
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.eot'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.ttf'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.svg'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.woff'), 'client');
+  api.addAssets(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.eot'), 'client');
+  api.addAssets(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.ttf'), 'client');
+  api.addAssets(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.svg'), 'client');
+  api.addAssets(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.woff'), 'client');
 
   // XXX this makes the paths to the icon sets absolute. it needs
   // to be included _after_ the standard bootstrap css so
